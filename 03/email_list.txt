@@ -1,0 +1,16 @@
+CREATE DATABASE elvis_store_sks;
+
+USE elvis_store_sks;
+
+CREATE TABLE email_list (
+	first_name varchar(20),
+	last_name varchar(20),
+	email varchar(60)
+);
+
+DESCRIBE email_list;
+
+DROP TABLE email_list;
+
+DELETE FROM email_list
+WHERE email = 'serenascalzi@icloud.com';
