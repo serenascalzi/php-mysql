@@ -1,0 +1,7 @@
+ALTER TABLE email_list ADD id INT NOT NULL AUTO_NCREMENT FIRST,
+	ADD PRIMARY KEY (id)
+
+INSERT INTO email_list (first_name, last_name, email)
+	VALUES ('Serena', 'Scalzi', 'serenascalzi@icloud.com')
+
+SELECT * FROM email_list
