@@ -1,0 +1,30 @@
+CREATE DATABASE gwdb_sks;
+
+USE gwdb_sks;
+
+CREATE TABLE guitarwars (
+	id int(11),
+	date timestamp,
+	name varchar(32),
+	score int(11),
+	screenshot varchar(64)
+);
+
+INSERT INTO guitarwars (id, date, name, score, screenshot)
+VALUES (0, NOW(), 'Kenny Lavitz', '64930', '');
+VALUES (0, NOW(), 'Ashton Simpson', '368420', '');
+VALUES (0, NOW(), 'Belita Chevy', '282470', '');
+VALUES (0, NOW(), 'Eddie Vanilli', '345900', '');
+VALUES (0, NOW(), 'Nevil Johansson', '98430', '');
+VALUES (0, NOW(), 'Paco Jastorius', '127650', '');
+
+SELECT * FROM guitarwars;
+
+ALTER TABLE guitarwars
+ADD COLUMN screenshot varchar(64);
+
+DESCRIBE guitarwars;
+
+INSERT INTO guitarwars VALUES (0, NOW(), '$name', '$score', '$screenshot');
+
+SELECT * FROM guitarwars ORDER BY score DESC, date ASC;
