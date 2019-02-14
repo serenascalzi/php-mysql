@@ -1,4 +1,4 @@
-ALTER TABLE email_list ADD id INT NOT NULL AUTO_NCREMENT FIRST,
+ALTER TABLE email_list ADD id INT NOT NULL AUTO_INCREMENT FIRST,
 	ADD PRIMARY KEY (id)
 
 INSERT INTO email_list (first_name, last_name, email)
